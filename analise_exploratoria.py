@@ -24,8 +24,8 @@ print(df.describe())
 # 3. Quantos clientes cancelaram (churn) vs quantos ficaram?
 # Ajuste "Churn" para o nome real da coluna no seu dataset
 print("\nDistribuição de churn:")
-print(df["Churn"].value_counts())
-print(df["Churn"].value_counts(normalize=True) * 100)  # em percentual
+print(df["Target_Churn"].value_counts())
+print(df["Target_Churn"].value_counts(normalize=True) * 100)  # em percentual
 
 # 4. Valores nulos por coluna (dados faltando)
 print("\nValores nulos por coluna:")
